@@ -1,0 +1,187 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+/*
+===================================
+Basic Setup
+===================================
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+
+html{
+	scroll-behavior: smooth;
+}
+
+header nav{
+	background:#19283f;
+	padding: 20px 0px;
+	width:100%;
+	overflow:hidden;
+}
+
+header nav .main-menu ul{
+	list-style:none;
+	margin-bottom: 0;
+}
+
+header nav .main-menu ul li:not(:last-child){
+	margin-right: 40px;
+}
+
+header nav .main-menu ul li a{
+	font-weight:400;
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.sticky-details{
+	text-align:center;
+	padding:60px 0px;
+}
+
+.sticky-details h2{
+	font-weight:700;
+	font-size:50px;
+	text-transform:capitalize;
+}
+
+.sticky-details p{
+	width: 100%;
+	margin: 30px auto;
+	text-align: center;
+	line-height:25px;
+	font-size:17px;
+}
+
+
+/*
+===================================
+Start Sticky Menu
+===================================
+*/
+
+.sticky{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	width: 100%;
+	padding: 15px 0 !important;
+	-webkit-transition:.3s ease-in;
+	-o-transition:.3s ease-in;
+	transition:.3s ease-in;
+    -webkit-transition:.4s linear;
+}
+
+/*
+===================================
+End Sticky Menu
+===================================
+*/
+
+/*
+===================================
+Start Scroll to Top 
+===================================
+*/
+
+.scroll-top{
+    position: fixed;
+    right: 30px;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 3px;
+    line-height: 40px;
+    text-align: center;
+    background: #f54748;
+    bottom: 40px;
+    display: none;
+}
+
+/* Bob */
+
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .4s, 1.5s;
+  animation-duration: .4s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+/*
+===================================
+End Scroll to Top 
+===================================
+*/
