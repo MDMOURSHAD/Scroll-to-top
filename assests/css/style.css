@@ -99,6 +99,7 @@ Start Scroll to Top
 */
 
 .scroll-top{
+    display: none;
     position: fixed;
     right: 30px;
     height: 40px;
@@ -110,7 +111,6 @@ Start Scroll to Top
     text-align: center;
     background: #f54748;
     bottom: 40px;
-    display: none;
 }
 
 /* Bob */
@@ -156,7 +156,6 @@ Start Scroll to Top
   }
 }
 .hvr-bob {
-  display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
